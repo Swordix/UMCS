@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "description": "app",
+  "main": "app.js",
+  "author": {
+    "name": "work-PC"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongoose": "^4.11.8"
+  }
+}

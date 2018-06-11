@@ -1,0 +1,356 @@
+  body {
+    -webkit-user-select: none;
+    /* user-select -- это нестандартное свойство */
+
+    -moz-user-select: none;
+    /* поэтому нужны префиксы */
+
+    -ms-user-select: none;
+  }
+
+
+/******************************************************
+                         JSPLUMB 
+******************************************************/
+#toast-container {
+    margin-top: 70px;
+}  
+
+#toast-container .toast-warning {
+  background-color: #E26A6A!important;
+}
+
+
+/******************************************************
+                         JSPLUMB 
+******************************************************/
+
+._jsPlumb_connector:hover { 
+  z-index:3000;
+}
+
+._jsPlumb_connector{ 
+  cursor:pointer;
+  z-index:3000;
+}
+
+._jsPlumb_drag_select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+}
+
+/*._jsPlumb_target_hover, .widget_target_hover {
+  box-shadow: 0px 0px 3px rgb(224,218,46) !important;
+}
+
+._jsPlumb_source_hover {
+  box-shadow: 0px 0px 3px rgb(225,225,225) !important;
+}*/
+
+/******************************************************
+                         STYLE 
+******************************************************/
+.nodroper{
+  background-color: #E1E5EC!important;
+}
+
+.w{
+  position:absolute;
+  /*  width: 200px; 
+    height: 100px;*/
+}
+
+.page-sidebar-menu li ul li a {
+  cursor: url('path-to-image.png'), auto;
+
+}
+
+.dragitem{
+  cursor: pointer!important;
+}
+
+.block{
+    position: relative;
+    background-color: #4C87B9;
+    /*border-radius: 3px;*/
+    cursor: default;
+    min-height: 48px;
+}
+
+.sensor{
+
+}
+
+.w .button{
+    background-color: #e43a45;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 15px;
+    width: 44px;
+    height: 48px;
+    font-size: 16px;
+    display: block;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+}
+
+.w .remove_item {
+  position: relative;
+} 
+
+.w .context{
+    position: absolute;
+    top: 52px;
+    color: #fff;
+}
+
+.sensor h3{
+        margin: -50px 0px 0px 49px;
+}
+
+.w .list{
+    position: relative;
+    background-color: #4C87B9;
+}
+
+.w .list .list-item{
+    height: 49px;
+    border-top: dashed #5C9BD1 1px;
+    background-color: #4C87B9;
+}
+
+.block .ic{
+    position: absolute;
+    font-size: 200px;
+    /* left: -11px; */
+    color: #5C9BD1;
+    opacity: .3;
+    overflow: hidden;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.block .ic i{
+    position: absolute;
+    left: -34px;
+    bottom: 15px;
+}
+
+.block h4{
+    right: 0px;
+    position: absolute;
+    left: 9px;
+    top: 0px;
+}
+
+.block h4, .block h6{
+  color: #FFF;
+}
+
+.block h6{
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+.block h1{
+    position: absolute;
+    right: 13px;
+    top: -15px;
+    color: #E1E5EC;
+    text-align: center;
+}
+
+/*.block*/ .level{
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    top: 55px;
+}
+
+/*.block*/ .level_item{
+    position: relative;
+    left: 0px;
+    border-top: dashed #5C9BD1 1px;
+    width: 100%;
+    height: 72px;
+    display: block;
+}
+
+.sector, .ep{/*.block */
+    position: absolute;
+    width: 12px;
+    height: 100%;
+    background-color: #5C9BD1;
+    top: 0px;
+    right: 0px;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.ep{
+    position: relative;
+    left: 198px;
+    top: -92px;
+    height: 48px;
+}
+
+.w .range{
+    position: relative;
+    top: -49px;
+    left: 50px;
+    width: 141px;
+    font-size: 12px;
+    height: 25px;
+    background-color: transparent;
+    color: #fff;
+    border: #5C9BD1 solid 1px;
+}
+
+.w .list-item span{
+    position: relative;
+    top: -50px;
+    left: 97px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.irs-grid-text {
+    color: #fff!important;
+}
+
+.w .inps{
+    position: absolute;
+    bottom: 13px;
+    width: 115px;
+    left: 12px;
+}
+
+.mt-checkbox, .mt-radio {
+    margin-bottom: 5px;
+    padding-left: 22px;
+}
+
+.progress-bar{
+    position: absolute;
+}
+
+.progress {
+     background-color: transparent; 
+     -webkit-box-shadow: none;
+     box-shadow: none;
+}
+
+.navbar-collapse{
+  z-index: 9999;
+}
+
+.target {
+  position: absolute;
+}
+
+.mode-switch{
+    position: fixed;
+    top: 80px;
+    right: 8px;
+}
+
+.bootstrap-switch-success{ background: #2F353B !important; }
+.bootstrap-switch-warning{ background: #2C3E50 !important; }
+
+#desktop, #desktop_draw{
+  position: relative;
+  width: 2400px;
+  height: 2400px;
+  background: #FAFAFA;
+  margin: 38px 38px 38px 0px;
+}
+
+#desktop_draw{
+  width: 1400px;
+  height: 1400px;
+}
+
+#tools{
+    display: block;
+    position: fixed;
+    top: 116px;
+    right: 9px;
+    width: 300px;
+    height: 45px;
+    background: #3B3F51;
+    border-bottom: 1px solid #e9ecf3;
+}
+
+.page-content-wrapper{
+  width: auto;
+}
+
+.ui-state-active{
+  background: #E1E5EC;
+}
+
+.ghost{
+    position: absolute;
+    top: -13px;
+    right: 0px;
+    background-color: aquamarine;
+    width: 28px;
+    height: 10px;
+}
+
+.text{
+    font-size: medium;
+    width: 146px;
+    max-width: 700px;
+    transition: width 0.25s;
+    outline: medium none;
+    background-color: #E1E5EC;
+    padding: 3px;
+    margin: 0;
+    cursor: default;
+    border: none;
+    border-radius: 5px;
+}
+
+.text::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.text::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.text:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.text:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.text:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.text:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.text:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.text:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.w .name{
+    position: absolute;
+    top: -27px;
+    left: 0px;
+    width: 210px;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    color: #E1E5EC;
+    cursor: default;
+    outline: none;
+    background-color: #525E64;
+}
+.w .name::-webkit-input-placeholder {color:#E1E5EC;}
+.w .name::-moz-placeholder          {color:#E1E5EC;}/* Firefox 19+ */
+.w .name:-moz-placeholder           {color:#E1E5EC;}/* Firefox 18- */
+.w .name:-ms-input-placeholder      {color:#E1E5EC;}
+.w .name::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.w .name::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.w .name:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.w .name:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.w .name:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.w .name:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.w .name:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.w .name:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
