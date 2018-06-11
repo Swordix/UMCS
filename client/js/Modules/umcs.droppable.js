@@ -9,8 +9,7 @@ $.widget( "ui.UMCSdroppable",
         fill: '#FAFAFA',
         stroke: '#E1E5EC',//'#5C9BD1',
         strokeWidth: 1,
-        let: true,
-        css: ''
+        let: true
       },
 
 	  _create: function() {
@@ -31,11 +30,11 @@ $.widget( "ui.UMCSdroppable",
          throw new Error( 'not enough params' );
        }else{
        	    var gridData = me._gridData();
-            var widthDesktop = gridData[0][me.options.grid[0]-1].x + (me.options.size[0] * 2);
+            var widthDesktop = gridData[0][me.options.grid[0]-1].x + (me.options.size[0] * 1.7);
             me.vars.width = widthDesktop;
-        	var heightDesktop = gridData[1][me.options.grid[1]-1].x + (me.options.size[1] * 2);
+        	var heightDesktop = gridData[1][me.options.grid[1]-1].x + (me.options.size[1] * 1.7);
         	me.vars.height = heightDesktop;
-			var elm = '<div class="'+ me.options.css +'" id="desktop" ' +
+			var elm = '<div id="desktop" ' +
 	          'style="z-index: -1; top: 0; left: 0; width: ' + widthDesktop + 'px; height: ' + heightDesktop + 'px; padding-right: 80px; padding-bottom: 80px;">' +
 	          '</div>';
 			$(elm).appendTo(me.element[0]);
@@ -66,32 +65,6 @@ $.widget( "ui.UMCSdroppable",
 			   d3.select(this).attr("class", ".show");
 			 })*/
 			this._render();
-
-			var menu = new BootstrapMenu('#desktop', {});
-			/*var menu = new BootstrapMenu('#desktop', {
-			  fetchElementData: function() {
-			  },
-			  // actionsGroups: [
-			   // ['bigGrid, smallGrid'],
-			   // ['snapGrid']
-			  //],
-			  actions: { bigGrid: {//snap grid
-			      name: 'Big grid step ',
-			      iconClass: 'fa-th-large',
-			      onClick: function() {
-			      }
-			    }, smallGrid: {
-			      name: 'Small grid step',
-			      iconClass: 'fa-th',
-			      onClick: function() {
-			      }
-			  }, /*snapGrid: {
-			      name: 'Snap grid',
-			      iconClass: 'fa-magnet',
-			      onClick: function() {
-			      }
-			  }}
-			});*/
 			
 	    }
       },
